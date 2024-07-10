@@ -48,7 +48,7 @@
                     </van-cell-group>
                 </div>
                 <div class="submit">
-                <van-button native-type="submit" class="submit-button" color="#ECE8E8">提交</van-button>
+                    <van-button native-type="submit" class="submit-button" color="#ECE8E8">提交</van-button>
                 </div>
             </van-form>
         </div>
@@ -99,7 +99,7 @@ export default {
 
 </script>
 
-<style style="less" scoped>
+<style scoped>
 .login2-container{
 	position : absolute;
 	width : 100%;
@@ -130,6 +130,8 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 .identity-choose{
     color: #763100 !important;
     border-radius: 25px;
@@ -163,20 +165,41 @@ export default {
     font-size: 3vw;
     background-color: #ECE8E8;
 }
-.login-button{
-    color: #763100 !important;
-    border-radius: 25px;
-    width: 50vw;
-    height: 6vh;
-    font-size: 3vw;
+
+@media (orientation: landscape) and (min-aspect-ratio: 1/1) {
+    .login2-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        height: 50vh;
+    }
+    .van-cell-group{
+        color: #763100 !important;
+        border-radius: 25px;
+        width: 50vw;
+        height: 6vh;
+        font-size: 3vw;
+        background-color: #ECE8E8;
+    }
+    .username-input{
+        color: #763100 !important;
+        border-radius: 25px;
+        width: 50vw;
+        height: 6vh;
+        font-size: 3vw;
+        background-color: #ECE8E8;
+    }
+    .password-input{
+        color: #763100 !important;
+        border-radius: 25px;
+        width: 50vw;
+        height: 6vh;
+        font-size: 3vw;
+        background-color: #ECE8E8;
+    }
 }
-.register-button{
-    color: #763100 !important;
-    border-radius: 25px;
-    width: 50vw;
-    height: 6vh;
-    font-size: 3vw;
-}
+
 .submit-button{
     color: #763100 !important;
     border-radius: 25px;

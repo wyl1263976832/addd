@@ -9,8 +9,8 @@ console.log(pathResolve, "111");
 export default defineConfig({
   plugins: [vue()],
   server:{
-    host:"192.168.110.253",
-    port: "8080",
+    host:'localhost',
+    port: 8080,
   },
   resolve:{
     alias:[{find: "@", replacement: pathResolve("src") }],
